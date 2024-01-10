@@ -4,8 +4,7 @@ import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
-//import java.net.MalformedURLException;
-//import java.net.URL;
+
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
@@ -31,9 +30,7 @@ public class basepage {
 	public static void openBrowser(String browser) {
 		
 		driver = new ChromeDriver();
-	     // ChromeOptions cap = new ChromeOptions();
-		
-	    //driver = new RemoteWebDriver(new URL("http://localhost:4449/wd/hub"),cap);
+	  
 		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
